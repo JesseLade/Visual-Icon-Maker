@@ -1,0 +1,73 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:1:1-25:12
+INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:1:1-25:12
+	package
+		INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:1:11-69
+uses-feature#0x00020000
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:5-77
+	android:glEsVersion
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:19-51
+	android:required
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:52-75
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:4:5-80
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:4:22-78
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:5:5-79
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:5:22-77
+uses-permission#android.permission.INTERNET
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:6:5-66
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:6:22-64
+application
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:8:5-23:19
+INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:8:5-23:19
+	android:extractNativeLibs
+		INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml
+	android:requestLegacyExternalStorage
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:12:9-52
+	android:label
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:10:9-42
+	android:hasCode
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:9:9-31
+	android:icon
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:11:9-43
+activity#com.demi.visualiconmaker.MainActivity
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:13:9-22:20
+	android:exported
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:14:13-36
+	android:configChanges
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:16:13-74
+	android:theme
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:15:13-71
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:13:19-47
+meta-data#android.app.lib_name
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:13-91
+	android:value
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:60-89
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:24-59
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:18:13-21:29
+action#android.intent.action.MAIN
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:19:17-68
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:19:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:20:17-76
+	android:name
+		ADDED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:20:27-74
+uses-sdk
+INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml
+INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml

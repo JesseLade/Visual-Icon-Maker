@@ -1,0 +1,19 @@
+                        -H/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/cpp
+-DCMAKE_SYSTEM_NAME=Android
+-DCMAKE_EXPORT_COMPILE_COMMANDS=ON
+-DCMAKE_SYSTEM_VERSION=21
+-DANDROID_PLATFORM=android-21
+-DANDROID_ABI=armeabi-v7a
+-DCMAKE_ANDROID_ARCH_ABI=armeabi-v7a
+-DANDROID_NDK=/Users/demi/Library/Android/sdk/ndk/25.1.8937393
+-DCMAKE_ANDROID_NDK=/Users/demi/Library/Android/sdk/ndk/25.1.8937393
+-DCMAKE_TOOLCHAIN_FILE=/Users/demi/Library/Android/sdk/ndk/25.1.8937393/build/cmake/android.toolchain.cmake
+-DCMAKE_MAKE_PROGRAM=/Users/demi/Library/Android/sdk/cmake/3.22.1/bin/ninja
+-DCMAKE_CXX_FLAGS=-std=c++17
+-DCMAKE_LIBRARY_OUTPUT_DIRECTORY=/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/intermediates/cxx/Debug/8225k4s1/obj/armeabi-v7a
+-DCMAKE_RUNTIME_OUTPUT_DIRECTORY=/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/intermediates/cxx/Debug/8225k4s1/obj/armeabi-v7a
+-DCMAKE_BUILD_TYPE=Debug
+-B/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/.cxx/Debug/8225k4s1/armeabi-v7a
+-GNinja
+                        Build command args: []
+                        Version: 2

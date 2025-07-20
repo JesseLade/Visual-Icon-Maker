@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN"
+  "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleExecutable</key>
+    <string>iconmaker</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.demi.sdl2-icon-maker</string>
+    <key>CFBundleName</key>
+    <string>Visual Icon Maker</string>
+    <key>CFBundleVersion</key>
+    <string>1.0.0</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0</string>
+    <key>NSHighResolutionCapable</key>
+    <true/>
+    <key>NSPrincipalClass</key>
+    <string>NSApplication</string>
+    <key>NSHumanReadableCopyright</key>
+    <string>© 2023 Demi</string>
+    <key>NSRequiresAquaSystemAppearance</key>
+    <true/>
+    <!-- icon name icon.icns -->
+    <key>CFBundleIconFile</key>
+    <string>icon</string>
+        <key>CFBundleSupportedPlatforms</key>
+    <array>
+        <string>MacOSX</string>
+        <string>iOS</string>
+    </array>
+</dict>
+</plist>

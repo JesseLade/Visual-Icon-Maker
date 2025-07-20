@@ -1,0 +1,7 @@
+com.demi.visualiconmaker.app-pngs-0 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/generated/res/pngs/debug
+com.demi.visualiconmaker.app-resValues-1 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/generated/res/resValues/debug
+com.demi.visualiconmaker.app-packageDebugResources-2 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.demi.visualiconmaker.app-packageDebugResources-3 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.demi.visualiconmaker.app-merged_res-4 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/build/intermediates/merged_res/debug
+com.demi.visualiconmaker.app-debug-5 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/debug/res
+com.demi.visualiconmaker.app-main-6 /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/res

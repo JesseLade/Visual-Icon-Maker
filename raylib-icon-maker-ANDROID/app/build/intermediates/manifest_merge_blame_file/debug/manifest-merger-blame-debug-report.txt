@@ -1,0 +1,68 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.demi.visualiconmaker" >
+4
+5    <uses-sdk
+6        android:minSdkVersion="21"
+7        android:targetSdkVersion="34" />
+8
+9    <uses-feature
+9-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:5-77
+10        android:glEsVersion="0x00020000"
+10-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:19-51
+11        android:required="true" />
+11-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:3:52-75
+12
+13    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+13-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:4:5-80
+13-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:4:22-78
+14    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+14-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:5:5-79
+14-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:5:22-77
+15    <uses-permission android:name="android.permission.INTERNET" />
+15-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:6:5-66
+15-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:6:22-64
+16
+17    <application
+17-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:8:5-23:19
+18        android:debuggable="true"
+19        android:extractNativeLibs="true"
+20        android:hasCode="true"
+20-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:9:9-31
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:11:9-43
+22        android:label="Visual Icon Maker"
+22-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:10:9-42
+23        android:requestLegacyExternalStorage="true" >
+23-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:12:9-52
+24        <activity
+24-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:13:9-22:20
+25            android:name="com.demi.visualiconmaker.MainActivity"
+25-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:13:19-47
+26            android:configChanges="orientation|screenSize|keyboardHidden"
+26-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:16:13-74
+27            android:exported="true"
+27-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:14:13-36
+28            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+28-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:15:13-71
+29            <meta-data
+29-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:13-91
+30                android:name="android.app.lib_name"
+30-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:24-59
+31                android:value="iconmaker-lib" />
+31-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:17:60-89
+32
+33            <intent-filter>
+33-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:18:13-21:29
+34                <action android:name="android.intent.action.MAIN" />
+34-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:19:17-68
+34-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:19:25-66
+35
+36                <category android:name="android.intent.category.LAUNCHER" />
+36-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:20:17-76
+36-->/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/AndroidManifest.xml:20:27-74
+37            </intent-filter>
+38        </activity>
+39    </application>
+40
+41</manifest>

@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/.cxx/Debug/8225k4s1/arm64-v8a",
+  "command": "/Users/demi/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/bin/clang++ --target=aarch64-none-linux-android21 --sysroot=/Users/demi/Library/Android/sdk/ndk/25.1.8937393/toolchains/llvm/prebuilt/darwin-x86_64/sysroot -Diconmaker_lib_EXPORTS -I/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/cpp/raylib/include -I/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/cpp/android_native_app_glue -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security  -std=c++17 -fno-limit-debug-info  -fPIC -o CMakeFiles/iconmaker-lib.dir/main.cpp.o -c /Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/cpp/main.cpp",
+  "file": "/Users/demi/raylib_editor_game/raylib-icon-maker/raylib-icon-maker-ANDROID/app/src/main/cpp/main.cpp"
+}
+]
