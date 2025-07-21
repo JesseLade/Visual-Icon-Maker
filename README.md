@@ -159,5 +159,27 @@ Let me know on **Geometry Dash** – my username is **happydemijess**!
 
 * 🔗 [[View on GitHub](https://github.com/JesseLade/Visual-Icon-Maker)](https://github.com/JesseLade/Visual-Icon-Maker)
 * 🌐 [[Download or Try on Itch.io](https://jesselade.itch.io/icon-maker)](https://jesselade.itch.io/icon-maker)
+## Footer
+<hr>
+<footer style="text-align:center; font-size:0.9em; color:gray;">
+  <p>🎨 <strong>Raylib Icon Maker PRO MAX</strong> was made with 💖 by <strong>Coding Master Demi</strong></p>
+  <p>📁 <a href="https://github.com/JesseLade/Visual-Icon-Maker" target="_blank">View on GitHub</a> • 🌐 <a href="https://jesselade.itch.io/icon-maker" target="_blank">Play or Download on Itch.io</a></p>
+  <p>🛠 Powered by <a href="https://www.raylib.com/" target="_blank">Raylib</a> + C++ • ☕ Feel free to fork, contribute, or remix!</p>
+  <p>
+    <img src="https://img.icons8.com/color/48/000000/geometry-dash.png"
+         alt="Geometry Dash Icon"
+         style="height:1em; vertical-align:middle; margin-right:5px;">
+    Geometry Dash: <strong>happydemijess</strong> (add me in-game!)
+  </p>
+  <p>
+    <img src="https://img.icons8.com/color/48/roblox.png"
+         alt="Roblox Logo"
+         style="height:1em; vertical-align:middle; margin-right:5px;">
+    Roblox: <strong>random_user123456745</strong> (🍕 pizza top outfit!) <a href="https://www.roblox.com/users/8761173422/profile">Here</a>
+  </p>
+  <p>x: <strong>Jesselade</strong> <a href="https://x.com/jesselade" target="_blank">Me</a></p>
+  <p style="color:#c00; font-weight:bold;">⚠️ Android APK may crash on some devices — it's experimental. Tell me any errors on Geometry Dash!</p>
+  <p>&copy; 2025 Demi • Icons, code, and creativity are yours to build upon 🚀</p>
+</footer>
 
 
