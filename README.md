@@ -19,9 +19,8 @@ A powerful, minimalist **icon design tool** written in **C++ using Raylib**, fea
 ## 🖥️ Platform Support
 
 ✅ macOS  
-✅ Linux  
 ✅ Windows  
-✅ Web (via Emscripten, with some adjustments)
+✅ Android
 
 Current build uses the `PLATFORM` macro to auto-detect OS.
 
