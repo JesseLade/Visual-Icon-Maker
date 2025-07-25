@@ -8,17 +8,15 @@
 #include <sstream>
 #include <cmath>
 #include "tinyfiledialogs.h"
-#include <TargetConditionals.h>
 #if defined(__APPLE__) && TARGET_OS_IPHONE
-  #define PLATFORM "iOS"
+#define PLATFORM "iOS"
 #elif defined(__APPLE__) && !TARGET_OS_IPHONE
-  #define PLATFORM "MACOS"
+#define PLATFORM "MACOS"
 #elif defined(_WIN32)
-  #define PLATFORM "WINDOWS"
+#define PLATFORM "WINDOWS"
 #else
-  #define PLATFORM "LINUX"
+#define PLATFORM "LINUX"
 #endif
-
 
 
 const int WIDTH = 512, HEIGHT = 512;
@@ -175,7 +173,7 @@ void DrawColorWheel(int cx, int cy, int radius) {
     }
 }
 
-int main() {
+int main(const char* imagePath = nullptr) {
     InitWindow(WIDTH, HEIGHT, "Visual Icon Maker");
     SetTargetFPS(60);
 
@@ -184,6 +182,27 @@ int main() {
     Texture2D canvas = LoadTextureFromImage(frames[currentFrame]);
 
     bool drawing = false;
+    if (imagePath) {
+        
+    
+        
+    
+        Image loadedImage = LoadImage(imagePath);
+        if (loadedImage.data) {
+            if (loadedImage.width != WIDTH || loadedImage.height != HEIGHT) {
+                ImageResize(&loadedImage, WIDTH, HEIGHT);
+            }
+            PushUndo(frames);
+            UnloadImage(frames[currentFrame]);
+            frames[currentFrame] = loadedImage;
+            tinyfd_notifyPopup("Opened File", imagePath, "info");
+        } else {
+            tinyfd_notifyPopup("Unsupported Format", "Only .png/.jpg supported. Use PNG or JPG instead of ICO or WEBP.", "warning");
+        }
+    }
+    
+      
+    
 
     while (!WindowShouldClose()) {
         int mx = GetMouseX(), my = GetMouseY();
@@ -249,6 +268,8 @@ int main() {
     if (savePath) {
         PushUndo(frames);
         ExportImage(frames[currentFrame], savePath);
+        std::string message = std::string("Saved\nAs\t") + savePath + "\n.png";
+        tinyfd_notifyPopup("Saved!", message.c_str(), "info");
     }
 }
 else if (IsKeyPressed(KEY_L)) {
@@ -322,6 +343,11 @@ else if (IsKeyPressed(KEY_L)) {
                 AddColor(drawColor);
             }
         }
+        
+        
+        std::string credits = std::string("main.cpp - Raylib Icon Maker by Demi 💖 PRO MAX") +
+                      " (" + PLATFORM + ")";
+        DrawText(credits.c_str(), 10, 10, 10, GRAY);
 
         if (inputActive) {
             DrawRectangle(50, HEIGHT / 2 - 20, 400, 40, LIGHTGRAY);
@@ -330,9 +356,6 @@ else if (IsKeyPressed(KEY_L)) {
             DrawText("Press ENTER to confirm | BACKSPACE to delete", 60, HEIGHT / 2 + 20, 10, GRAY);
             
         }
-        std::string credits = std::string("main.cpp - Raylib Icon Maker by Demi 💖 PRO MAX") +
-        " (" + PLATFORM + ")";
-        DrawText(credits.c_str(), 10, 10, 10, GRAY);
         if (showInfo) {
             DrawRectangle(60, 60, WIDTH - 120, HEIGHT - 120, Fade(LIGHTGRAY, 0.95f));
             DrawRectangleLines(60, 60, WIDTH - 120, HEIGHT - 120, GRAY);
@@ -363,6 +386,9 @@ else if (IsKeyPressed(KEY_L)) {
     while (!redoStack.empty()) { free(redoStack.top()); redoStack.pop(); }
 
     CloseWindow();
-    return 0;
+
+    
 }
+
+
 // main.cpp - Raylib Icon Maker by Demi 💖 PRO MAX (with GUI Text Input + Color Wheel + Palette) - WINDOWS

@@ -8,12 +8,14 @@
 #include <sstream>
 #include <cmath>
 #include "tinyfiledialogs.h"
-#include <TargetConditionals.h>
+define
 
-#if defined(__APPLE__) && TARGET_OS_IPHONE
+#if defined(__APPLE__) && defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE
   #define PLATFORM "iOS"
-#elif defined(__APPLE__) && !TARGET_OS_IPHONE
+#elif defined(__APPLE__) && (!defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE)
   #define PLATFORM "MACOS"
+#elif defined(__ANDROID__)
+  #define PLATFORM "ANDROID"
 #elif defined(_WIN32)
   #define PLATFORM "WINDOWS"
 #else

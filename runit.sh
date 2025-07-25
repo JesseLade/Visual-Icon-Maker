@@ -1,3 +1,15 @@
 #!/bin/bash
-g++ main.cpp tinyfiledialogs.c  -o IconMaker -lraylib -std=c++11 
+
+
+
+
+
+g++ -std=c++11 -ObjC++ \
+    main.mm main.cpp tinyfiledialogs.c \
+    -o "IconMaker" \
+    -lraylib \
+    -framework Cocoa
+
+
+
 

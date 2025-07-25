@@ -8,7 +8,9 @@
 #include <sstream>
 #include <cmath>
 #include "tinyfiledialogs.h"
-#if defined(__APPLE__)
+#if defined(__APPLE__) && TARGET_OS_IPHONE
+#define PLATFORM "iOS"
+#elif defined(__APPLE__) && !TARGET_OS_IPHONE
 #define PLATFORM "MACOS"
 #elif defined(_WIN32)
 #define PLATFORM "WINDOWS"
@@ -171,7 +173,7 @@ void DrawColorWheel(int cx, int cy, int radius) {
     }
 }
 
-int main() {
+extern "C" void runmain(const char* imagePath = nullptr) {
     InitWindow(WIDTH, HEIGHT, "Visual Icon Maker");
     SetTargetFPS(60);
 
@@ -180,6 +182,27 @@ int main() {
     Texture2D canvas = LoadTextureFromImage(frames[currentFrame]);
 
     bool drawing = false;
+    if (imagePath) {
+        
+    
+        
+    
+        Image loadedImage = LoadImage(imagePath);
+        if (loadedImage.data) {
+            if (loadedImage.width != WIDTH || loadedImage.height != HEIGHT) {
+                ImageResize(&loadedImage, WIDTH, HEIGHT);
+            }
+            PushUndo(frames);
+            UnloadImage(frames[currentFrame]);
+            frames[currentFrame] = loadedImage;
+            tinyfd_notifyPopup("Opened File", imagePath, "info");
+        } else {
+            tinyfd_notifyPopup("Unsupported Format", "Only .png/.jpg supported. Use PNG or JPG instead of ICO or WEBP.", "warning");
+        }
+    }
+    
+      
+    
 
     while (!WindowShouldClose()) {
         int mx = GetMouseX(), my = GetMouseY();
@@ -245,6 +268,8 @@ int main() {
     if (savePath) {
         PushUndo(frames);
         ExportImage(frames[currentFrame], savePath);
+        std::string message = std::string("Saved\nAs\t") + savePath + "\n.png";
+        tinyfd_notifyPopup("Saved!", message.c_str(), "info");
     }
 }
 else if (IsKeyPressed(KEY_L)) {
@@ -318,6 +343,8 @@ else if (IsKeyPressed(KEY_L)) {
                 AddColor(drawColor);
             }
         }
+        
+        
         std::string credits = std::string("main.cpp - Raylib Icon Maker by Demi 💖 PRO MAX") +
                       " (" + PLATFORM + ")";
         DrawText(credits.c_str(), 10, 10, 10, GRAY);
@@ -359,7 +386,8 @@ else if (IsKeyPressed(KEY_L)) {
     while (!redoStack.empty()) { free(redoStack.top()); redoStack.pop(); }
 
     CloseWindow();
-    return 0;
+
+    
 }
 
 

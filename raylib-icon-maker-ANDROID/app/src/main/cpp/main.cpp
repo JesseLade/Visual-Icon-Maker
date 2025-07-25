@@ -2,23 +2,25 @@
 extern "C" {
     #include "raylib.h"
 }
-#include "TargetConditionals.h"
-
 // Include necessary headers
+#include <TargetConditionals.h>
+
 #include <vector>
 #include <stack>
 #include <cstring>
 #include <algorithm>
 #include <sstream>
 #include <cmath>
-#if defined(__APPLE__) && TARGET_OS_IPHONE
-#define PLATFORM "iOS"
-#elif defined(__APPLE__) && !TARGET_OS_IPHONE
-#define PLATFORM "MACOS"
+#if defined(__APPLE__) && defined(TARGET_OS_IPHONE) && TARGET_OS_IPHONE
+  #define PLATFORM "iOS"
+#elif defined(__APPLE__) && (!defined(TARGET_OS_IPHONE) || !TARGET_OS_IPHONE)
+  #define PLATFORM "MACOS"
+#elif defined(__ANDROID__)
+  #define PLATFORM "ANDROID"
 #elif defined(_WIN32)
-#define PLATFORM "WINDOWS"
+  #define PLATFORM "WINDOWS"
 #else
-#define PLATFORM "LINUX"
+  #define PLATFORM "LINUX"
 #endif
 
 
@@ -392,7 +394,7 @@ int main() {
                 AddColor(drawColor);
             }
         }
-        
+
         if (inputActive) {
             DrawRectangle(50, HEIGHT / 2 - 20, 400, 40, LIGHTGRAY);
             DrawRectangleLines(50, HEIGHT / 2 - 20, 400, 40, DARKGRAY);
