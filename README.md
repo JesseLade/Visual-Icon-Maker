@@ -114,6 +114,7 @@ unzip "Visual Icon Maker.zip"
 1. Download the APK.
 2. Click on it to install.
 3. Done! 🎉
+4. this was actually made in java
 
 ---
 
